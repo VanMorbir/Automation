@@ -3,10 +3,11 @@ using OpenQA.Selenium.Chrome;
 
 class EntryPoint
 {
+    static IWebDriver driver = new ChromeDriver();
+    static IWebElement textBoxElement;
+
     public static void Main()
     {
-        IWebDriver driver = new ChromeDriver();
-
         //initial test
         driver.Navigate().GoToUrl("http://testing.todorvachev.com");
 
@@ -74,6 +75,10 @@ class EntryPoint
             RedMessage("BrokenCSS is not visible");
         }
 
+        //Textbox test
+        string textBoxURL = "http://testing.todorvachev.com/text-input-field/";
+        driver.Navigate().GoToUrl(textBoxURL);
+        textBoxElement = driver.FindElement(By.Name("username"));
 
         driver.Quit();
 

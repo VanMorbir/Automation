@@ -40,6 +40,8 @@ class EntryPoint
         string csspath = "#post-108 > div > figure > img";
         string xpath = "//*[@id=\"post-108\"]/div/figure/img";
         string cssURL = "http://testing.todorvachev.com/css-path/";
+        string brokenCSSpath = "#post-108 > div > fig img";
+
         driver.Navigate ().GoToUrl(cssURL);
         IWebElement cssPathElement = driver.FindElement(By.CssSelector(csspath));
         IWebElement xPathElement = driver.FindElement(By.XPath(xpath));
@@ -59,6 +61,20 @@ class EntryPoint
         {
             RedMessage("xPath is NOT VISIBLE");
         }
+        try
+        {
+            IWebElement brokenCSSElement = driver.FindElement(By.CssSelector(brokenCSSpath));
+            if (brokenCSSElement.Displayed)
+            {
+                GreenMessage("BrokenCSS is visible");
+            }
+        }
+        catch (NoSuchElementException)
+        {
+            RedMessage("BrokenCSS is not visible");
+        }
+
+
         driver.Quit();
 
     }

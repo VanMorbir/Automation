@@ -9,22 +9,39 @@ class EntryPoint
 
         //initial test
         driver.Navigate().GoToUrl("http://testing.todorvachev.com");
-        Thread.Sleep(3000);
+        //Thread.Sleep(3000);
         driver.Quit();
 
         //element test
         driver = new ChromeDriver();
         driver.Navigate().GoToUrl("http://testing.todorvachev.com/name/");
-        IWebElement element = driver.FindElement(By.Name("myName"));
-        if (element.Displayed)
+        IWebElement elementName = driver.FindElement(By.Name("myName"));
+        if (elementName.Displayed)
         {
-            GreenMessage("element is visible");
+            GreenMessage("Name is visible");
         }
         else
         {
-            RedMessage("element is NOT VISIBLE");
+            RedMessage("Name is NOT VISIBLE");
         }
         driver.Quit();
+
+        //selector test
+        string url = "http://testing.todorvachev.com/id/";
+        string ID = "testImage";
+        driver = new ChromeDriver();
+        driver.Navigate().GoToUrl(url);
+        IWebElement elementID = driver.FindElement(By.Id(ID));
+        if (elementID.Displayed)
+        {
+            GreenMessage("ID is visible");
+        }
+        else
+        {
+            RedMessage("ID is NOT VISIBLE");
+        }
+        driver.Quit();
+
     }
 
     private static void RedMessage(string message)

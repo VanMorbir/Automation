@@ -2,6 +2,9 @@
 {
     public class EntryPoint
     {
-        static void Main();
+        static void Main()
+        {
+
+        }
     }
 }

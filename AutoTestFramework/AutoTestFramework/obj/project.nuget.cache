@@ -1,15 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "0IfN/qeTM9gaIspN70F+ZEgn6E3Wv+gLcSOjeXQGMZCm0l8NInWBV9++MeRAE/CGQFIcLwmJdmRuyeMAUabAlw==",
+  "dgSpecHash": "SpT/C60u9nGb2PfWQhOCsak/aC8KZyhPqovBYlyUbTslkQ6szunyeymI9YxObvKHyZo8/Z+IQy98OpL4wCBQww==",
   "success": true,
   "projectFilePath": "C:\\Users\\gil.getreuer\\Documents\\GitHub\\Automataion\\AutoTestFramework\\AutoTestFramework\\AutoTestFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\4.0.1\\dotnetseleniumextras.pageobjects.core.4.0.1.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core.linq\\1.0.0\\dotnetseleniumextras.pageobjects.core.linq.1.0.0.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver.chromedriver\\97.0.4692.7100\\selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512"
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.community.pageobjects\\1.0.0\\selenium.community.pageobjects.1.0.0.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver.chromedriver\\97.0.4692.7100\\selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.1\\system.reflection.dispatchproxy.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

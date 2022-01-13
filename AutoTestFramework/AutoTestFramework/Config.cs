@@ -27,6 +27,7 @@
         public static class AlertMessages
         {
             public static string SuccessfulLogin = "Succesful login!";
+            public static string UserNameLengthOutOfRange = "User Id should not be empty / length be between 5 to 12";
         }
     }
 }

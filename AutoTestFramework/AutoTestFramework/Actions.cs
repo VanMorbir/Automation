@@ -6,6 +6,7 @@ namespace AutoTestFramework
     {
         public static void InitDriver()
         {
+            Driver.InitDriver();
             Driver.driver.Navigate().GoToUrl(Config.baseURL);
         }
         public static void FillLoginForm(string username, string password, string repeatPassword)

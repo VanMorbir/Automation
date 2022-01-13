@@ -1,14 +1,16 @@
-﻿namespace AutoTestFramework
+﻿using AutoTestFramework.UIElements;
+
+namespace AutoTestFramework
 {
     public static class NavigateTo
     {
         public static void LoginFromThroughMenu()
         {
-            LoginFromThroughMenu 
-        }
-        public static void LoginFromThroughPost()
-        {
+            Menu menu = new Menu(); 
+            TestScenariosPage tsPage = new TestScenariosPage();
 
+            menu.TestScenarios.Click();
+            tsPage.LoginForm.Click();
         }
     }
 }

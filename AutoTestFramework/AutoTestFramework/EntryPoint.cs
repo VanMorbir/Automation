@@ -1,11 +1,8 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-
-namespace AutoTestFramework
+﻿namespace AutoTestFramework
 {
     public class EntryPoint
     {
-        public void Main()
+        public static void Main()
         {
         }
     }

@@ -1,21 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "UMV8pOo6lmXnxAwfSvPt3TQj/NC0vYAfTF7CPtmC55eD4PueOHx4PvKhJGVHoQ/r28qWi9O/iBbiusWcYAITpA==",
+  "dgSpecHash": "vFqaV3+Y/w08ldOSrxm3jcXmVHce17lQOARuLzpEEnVx9Zkhtk/Ap+y3OaAnI7XGFHHbhirnCU9PkRLD6esYug==",
   "success": true,
   "projectFilePath": "C:\\Users\\gil.getreuer\\Documents\\GitHub\\Automataion\\AutoTestFramework\\AutoTestFramework\\AutoTestFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\4.0.1\\dotnetseleniumextras.pageobjects.core.4.0.1.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core.linq\\1.0.0\\dotnetseleniumextras.pageobjects.core.linq.1.0.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\microsoft.net.test.sdk\\17.0.0\\microsoft.net.test.sdk.17.0.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.0.0\\microsoft.testplatform.objectmodel.17.0.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\microsoft.testplatform.testhost\\17.0.0\\microsoft.testplatform.testhost.17.0.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\nunit.console\\3.13.2\\nunit.console.3.13.2.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\nunit.consolerunner\\3.13.2\\nunit.consolerunner.3.13.2.nupkg.sha512",
@@ -30,9 +23,9 @@
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver\\4.0.1\\selenium.webdriver.4.0.1.nupkg.sha512",
     "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver.chromedriver\\97.0.4692.7100\\selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.1\\system.reflection.dispatchproxy.4.5.1.nupkg.sha512",
-    "C:\\Users\\gil.getreuer\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver.iedriver\\4.0.0\\selenium.webdriver.iedriver.4.0.0.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\selenium.webdriver.microsoftdriver\\17.17134.0\\selenium.webdriver.microsoftdriver.17.17134.0.nupkg.sha512",
+    "C:\\Users\\gil.getreuer\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.1\\system.reflection.dispatchproxy.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

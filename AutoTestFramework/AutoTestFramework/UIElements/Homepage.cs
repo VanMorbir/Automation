@@ -5,9 +5,9 @@ namespace AutoTestFramework.UIElements
 {
     public class Homepage
     {
-        public Homepage()
+        public Homepage(IWebDriver driver)
         {
-            PageFactory.InitElements(Driver.driver, this);
+            PageFactory.InitElements(driver, this);
         }
         [FindsBy(How = How.CssSelector, Using = "#page-17 > header > h1")]
         public IWebElement Headline { get; set; }

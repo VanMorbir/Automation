@@ -4,16 +4,17 @@ using OpenQA.Selenium;
 
 namespace AutoTestFramework.Tests
 {
-    
+    [Parallelizable]
     public class LoginInvalidUsername
     {
         IAlert alert;
+        public IWebDriver Driver { get; set; }
 
         [OneTimeSetUp]
         public void Init()
         {
-            Actions.InitDriver();
-            NavigateTo.LoginFromThroughMenu();
+            Driver = Actions.InitDriver();
+            NavigateTo.LoginFromThroughMenu(Driver);
         }
 
         [Test]
@@ -21,8 +22,9 @@ namespace AutoTestFramework.Tests
         {
             Actions.FillLoginForm(Config.Credentials.Invalid.UserName.FourCharacters,
                                   Config.Credentials.Valid.Password,
-                                  Config.Credentials.Valid.RepeatPassword);
-            alert = Driver.driver.SwitchTo().Alert();
+                                  Config.Credentials.Valid.RepeatPassword,
+                                  Driver);
+            alert = Driver.SwitchTo().Alert();
             Assert.AreEqual(Config.AlertMessages.UserNameLengthOutOfRange, alert.Text);
             alert.Accept();
         }
@@ -32,8 +34,9 @@ namespace AutoTestFramework.Tests
         {
             Actions.FillLoginForm(Config.Credentials.Invalid.UserName.ThirteenCharacters,
                                   Config.Credentials.Valid.Password,
-                                  Config.Credentials.Valid.RepeatPassword);
-            alert = Driver.driver.SwitchTo().Alert();
+                                  Config.Credentials.Valid.RepeatPassword,
+                                  Driver);
+            alert = Driver.SwitchTo().Alert();
             Assert.AreEqual(Config.AlertMessages.UserNameLengthOutOfRange, alert.Text);
             alert.Accept();
         }
@@ -41,7 +44,7 @@ namespace AutoTestFramework.Tests
         [OneTimeTearDown]
         public void CleanUp()
         {
-            Driver.driver.Quit();
+            Driver.Quit();
         }
     }
 }

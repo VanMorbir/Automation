@@ -1,0 +1,7 @@
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.csproj.AssemblyReference.cache
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.exe.config
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.AssemblyInfoInputs.cache
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.AssemblyInfo.cs
+C:\Users\gil.getreuer\Documents\GitHub\Automataion\AutoTestFramework\AutoTestFramework\obj\Release\net48\AutoTestFramework.csproj.CoreCompileInputs.cache

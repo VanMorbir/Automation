@@ -1,0 +1,31 @@
+package config;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import org.junit.BeforeClass;
+
+public class VideoGamesDBconfig {
+
+    public static RequestSpecification VideoGameRequestSpec;
+    public static ResponseSpecification VideoGameResponseSpec;
+
+    @BeforeClass
+    public static void setup(){
+        VideoGameRequestSpec = new RequestSpecBuilder()
+                .setBaseUri("http://167.99.197.177")
+                .setBasePath("/app/")
+                .setPort(8080)
+                .addHeader("Content-Type", "application/json")
+                .addHeader("Accept", "application/json")
+                .build();
+        VideoGameResponseSpec = new ResponseSpecBuilder()
+                .expectStatusCode(200)
+                .build();
+
+        RestAssured.requestSpecification = VideoGameRequestSpec;
+        RestAssured.responseSpecification = VideoGameResponseSpec;
+    }
+}

@@ -72,4 +72,13 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
                 delete("videogames/1").
         then();
     }
+
+    @Test
+    public void getSingleGame(){
+        given()
+                .pathParam("videoGameId", 5).
+        when()
+                .get(VideoGamesEndpoint.SINGLE_VIDEO_GAME).
+        then();
+    }
 }

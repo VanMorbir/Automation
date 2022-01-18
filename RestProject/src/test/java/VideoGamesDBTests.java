@@ -47,4 +47,21 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
                 .post(VideoGamesEndpoint.ALL_VIDEO_GAMES).
         then();
     }
+
+    @Test
+    public void updateGame(){
+        String gameBodyJson = "{\n" +
+                "  \"id\": 1,\n" +
+                "  \"name\": \"new name\",\n" +
+                "  \"releaseDate\": \"2022-01-18T12:48:13.241Z\",\n" +
+                "  \"reviewScore\": 69,\n" +
+                "  \"category\": \"Driving\",\n" +
+                "  \"rating\": \"Mature\"\n" +
+                "}";
+        given()
+                .body(gameBodyJson).
+        when()
+                .put(VideoGamesEndpoint.ALL_VIDEO_GAMES).
+        then();
+    }
 }

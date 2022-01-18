@@ -61,7 +61,15 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
         given()
                 .body(gameBodyJson).
         when()
-                .put(VideoGamesEndpoint.ALL_VIDEO_GAMES).
+                .put("videogames/1").
+        then();
+    }
+
+    @Test
+    public void deleteTest(){
+        given().
+        when().
+                delete("videogames/1").
         then();
     }
 }

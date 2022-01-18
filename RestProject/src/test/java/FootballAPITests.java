@@ -23,4 +23,13 @@ public class FootballAPITests extends FootballAPIConfig {
         then().
                 body("founded", equalTo(1886));
     }
+
+    @Test
+    public void getFirstTeamName() {
+        given().
+                when()
+                .get("competitions/2021/teams").
+                then().
+                body("teams.name[0]", equalTo("Arsenal FC"));
+    }
 }

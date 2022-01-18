@@ -30,4 +30,21 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
                 .post(VideoGamesEndpoint.ALL_VIDEO_GAMES).
         then();
     }
+
+    @Test
+    public void createGameByXML() {
+        String gameBodyXML = "<videoGame category=\"Simulation\" rating=\"Universal\">\n" +
+                "    <id>12</id>\n" +
+                "    <name>EliteDangerous</name>\n" +
+                "    <releaseDate>2001-04-23T00:00:00Z</releaseDate>\n" +
+                "    <reviewScore>90</reviewScore>\n" +
+                "  </videoGame>";
+        given()
+                .body(gameBodyXML)
+                .header("Accept", "application/xml")
+                .header("Content-Type", "application/xml").
+        when()
+                .post(VideoGamesEndpoint.ALL_VIDEO_GAMES).
+        then();
+    }
 }

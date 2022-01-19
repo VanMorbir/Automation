@@ -1,4 +1,7 @@
 import config.FootballAPIConfig;
+import io.restassured.http.ContentType;
+import io.restassured.http.Headers;
+import io.restassured.response.Response;
 import org.junit.Test;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -31,5 +34,30 @@ public class FootballAPITests extends FootballAPIConfig {
                 .get("competitions/2021/teams").
                 then().
                 body("teams.name[0]", equalTo("Arsenal FC"));
+    }
+
+    @Test
+    public void getAllTeamData(){
+        String responseBody = get("teams/57").asString();
+    }
+
+    @Test
+    public void getAllTeamData_CheckFirst(){
+        Response response =
+                given().
+                when().get("teams/57").
+                then().contentType(ContentType.JSON)
+                .extract().response();
+        String responseString = response.asString();
+    }
+
+    @Test
+    public void extractHeaders(){
+        Response response =
+                given().
+                when().get("teams/57").
+                then().contentType(ContentType.JSON).
+                extract().response();
+        Headers Headers = response.getHeaders();
     }
 }

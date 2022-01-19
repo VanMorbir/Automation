@@ -2,9 +2,12 @@ import config.VideoGamesDBconfig;
 import config.VideoGamesEndpoint;
 import org.junit.Test;
 
+import java.io.Console;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.Matchers.lessThan;
 
 public class VideoGamesDBTests extends VideoGamesDBconfig {
 
@@ -114,5 +117,16 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
                 get(VideoGamesEndpoint.SINGLE_VIDEO_GAME).
         then().
                 body(matchesJsonSchemaInClasspath("VideoGameJsonSchema.json"));
+    }
+
+    @Test
+    public void captureResponseTime(){
+        long responseTime = get(VideoGamesEndpoint.ALL_VIDEO_GAMES).time();
+    }
+
+    @Test
+    public void assertResponseTime(){
+        when().get(VideoGamesEndpoint.ALL_VIDEO_GAMES).
+        then().time(lessThan(1000L));
     }
 }

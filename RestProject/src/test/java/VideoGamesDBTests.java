@@ -3,6 +3,7 @@ import config.VideoGamesEndpoint;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath;
 
 public class VideoGamesDBTests extends VideoGamesDBconfig {
 
@@ -90,5 +91,17 @@ public class VideoGamesDBTests extends VideoGamesDBconfig {
         when().
                 post(VideoGamesEndpoint.ALL_VIDEO_GAMES).
         then();
+    }
+
+    @Test
+    public void testVideoGameSchemaXML(){
+        given().
+                pathParam("videoGameId", 5).
+                header("Content-Type","application/xml").
+                header("Accept", "application/xml").
+        when().
+                get(VideoGamesEndpoint.SINGLE_VIDEO_GAME).
+        then().
+                body(matchesXsdInClasspath("VideoGameXSD.xsd"));
     }
 }

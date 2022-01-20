@@ -11,5 +11,11 @@ public class ParaBankUIConfig {
         public static class InvalidLogin {
             public static String wrongPassword = "123";
         }
+        public static class ContactInfo {
+            public static String Name = "Test McTestface";
+            public static String Email = "test@test.com";
+            public static String PhoneNumber = "+123 456789";
+            public static String Message = "I am a message, hear me roar";
+        }
     }
 }

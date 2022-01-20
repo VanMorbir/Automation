@@ -1,4 +1,4 @@
-package config;
+package config.apiconfig;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

@@ -18,4 +18,9 @@ public class ParaBankUIConfig {
             public static String Message = "I am a message, hear me roar";
         }
     }
+    public static class Alerts{
+        public static class Contact{
+            public static String MissingPhoneNumber = "Phone is required.";
+        }
+    }
 }

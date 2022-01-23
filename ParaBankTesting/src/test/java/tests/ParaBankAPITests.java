@@ -5,7 +5,6 @@ import config.Reporter;
 import config.apiconfig.Endpoints;
 import config.apiconfig.ParaBankAPIConfig;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -35,7 +34,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
             reporter.extents.endTest(reporter.test);
         }
         catch (AssertionError e){
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch");
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
             reporter.extents.endTest(reporter.test);
             throw e;
         }
@@ -46,9 +45,9 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
         reporter.test = reporter.extents.startTest("API-TEST002", "Verify the details of a single account");
         try {
             given().
-                    when().get(Endpoints.ACCOUNT("12345")).
+                    when().get(Endpoints.ACCOUNT("13344")).
                     then().
-                    assertThat().body("account.id", equalTo("12345")).
+                    assertThat().body("account.id", equalTo("13344")).
                     and().
                     assertThat().body("account.customerId", equalTo("12212")).
                     and().
@@ -59,7 +58,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
         }
         catch (AssertionError e)
         {
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch");
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
             reporter.extents.endTest(reporter.test);
             throw e;
         }

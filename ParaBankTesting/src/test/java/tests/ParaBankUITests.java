@@ -22,7 +22,7 @@ public class ParaBankUITests {
 
     @Test
     public void testValidContact(){
-        reporter.test = reporter.extents.startTest("UI_TEST001","Testing Valid 'Contact Us' request");
+        reporter.test = reporter.extents.startTest("UI-TEST001","Testing Valid 'Contact Us' request");
         NavigateTo.ContactThroughRightNavBar(driver);
         ParaBankActions.FillContactForm(
                 ParaBankUIConfig.Credentials.ContactInfo.Name,
@@ -46,7 +46,7 @@ public class ParaBankUITests {
 
     @Test
     public void testMissingPhoneNumberInContact(){
-        reporter.test = reporter.extents.startTest("UI_TEST002","Testing 'Contact Us' request with missing phone number");
+        reporter.test = reporter.extents.startTest("UI-TEST002","Testing 'Contact Us' request with missing phone number");
         NavigateTo.ContactThroughRightNavBar(driver);
         ParaBankActions.FillContactForm(
                 ParaBankUIConfig.Credentials.ContactInfo.Name,

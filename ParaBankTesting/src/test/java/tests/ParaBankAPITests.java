@@ -27,7 +27,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
                     then().
                     assertThat().body("customer.id", equalTo("12212")).
                     and().
-                    assertThat().body("customer.firstName", equalTo("Jooooooooooohn")).
+                    assertThat().body("customer.firstName", equalTo("John")).
                     and().
                     assertThat().body("customer.lastName", equalTo("Smith"));
             reporter.test.log(LogStatus.PASS, "Response from server matched credentials");

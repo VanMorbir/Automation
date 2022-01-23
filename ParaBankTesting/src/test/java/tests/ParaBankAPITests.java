@@ -34,7 +34,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
             reporter.extents.endTest(reporter.test);
         }
         catch (AssertionError e){
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch: \n" + e.getMessage());
             reporter.extents.endTest(reporter.test);
             throw e;
         }
@@ -58,7 +58,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
         }
         catch (AssertionError e)
         {
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch: \n" + e.getMessage());
             reporter.extents.endTest(reporter.test);
             throw e;
         }

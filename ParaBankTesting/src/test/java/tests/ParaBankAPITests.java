@@ -46,9 +46,9 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
         reporter.test = reporter.extents.startTest("API-TEST002", "Verify the details of a single account");
         try {
             given().
-                    when().get(Endpoints.ACCOUNT("12345")).
+                    when().get(Endpoints.ACCOUNT("13344")).
                     then().
-                    assertThat().body("account.id", equalTo("12345")).
+                    assertThat().body("account.id", equalTo("13344")).
                     and().
                     assertThat().body("account.customerId", equalTo("12212")).
                     and().

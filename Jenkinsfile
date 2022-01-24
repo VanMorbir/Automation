@@ -10,14 +10,19 @@ pipeline {
             steps {
                 //bat 'cd ParaBankTesting'
                 bat './mvnw test -f ParaBankTesting'
-                 publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: false,
-                    keepAll: false,
-                    reportDir: '.',
-                    reportFiles: 'ParaBankTestingReport.html',
-                    reportName: 'ExtentReport',
-                    reportTitles: ''])
+
+            }
+        }
+        stage('Report') {
+            steps {
+                publishHTML([
+                                    allowMissing: false,
+                                    alwaysLinkToLastBuild: false,
+                                    keepAll: false,
+                                    reportDir: '.',
+                                    reportFiles: 'ParaBankTestingReport.html',
+                                    reportName: 'ExtentReport',
+                                    reportTitles: ''])
             }
         }
     }

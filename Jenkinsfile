@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 //bat 'cd ParaBankTesting'
-                bat './mvnw test'
+                bat './mvnw test -f ParaBankTesting'
             }
         }
     }

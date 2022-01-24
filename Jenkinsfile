@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                bat 'cd ParaBankTesting'
                 bat 'mvn test'
             }
         }

@@ -29,6 +29,11 @@ pipeline {
                                     reportFiles: 'ParaBankTestingReport.html',
                                     reportName: 'ExtentReport',
                                     reportTitles: ''])
+
+                emailext subject: 'ParaBank Test Report',
+                                    body: '${FILE,path="ParaBankTestingReport.html"}',
+                                    to: 'gil.getreuer@qualitestgroup.com',
+                                    mimeType: 'text/html'
             }
         }
     }

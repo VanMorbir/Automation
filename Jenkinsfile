@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Test') {
             steps {
-                //bat 'cd ParaBankTesting'
                 script {
                     try {
                         bat './mvnw test -f ParaBankTesting'
@@ -32,7 +31,7 @@ pipeline {
 
                 emailext subject: 'ParaBank Test Report',
                                     body: '${FILE,path="ParaBankTestingReport.html"}',
-                                    to: 'gil.getreuer@qualitestgroup.com',
+                                    to: 'vanmorbir@gmail.com',
                                     mimeType: 'text/html'
             }
         }

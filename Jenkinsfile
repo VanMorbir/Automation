@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               echo 'This is a minimal pipeline.'
+               bat './mvnw clean compile'
             }
         }
         stage('Test') {
             steps {
                 //bat 'cd ParaBankTesting'
-                bat 'mvn test'
+                bat './mvnw test'
             }
         }
     }

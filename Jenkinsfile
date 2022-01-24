@@ -6,12 +6,14 @@ pipeline {
                bat ' ./mvnw compile -f ParaBankTesting'
             }
         }
-        stage('Test') {
-            steps {
-                //bat 'cd ParaBankTesting'
-                bat './mvnw test -f ParaBankTesting'
-
+        try {
+            stage('Test') {
+                steps {
+                    bat './mvnw test -f ParaBankTesting'
+                }
             }
+        catch (Exception e) {
+            echo "Some tests failed, moving on"
         }
         stage('Report') {
             steps {

@@ -21,7 +21,6 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
     @Test
     public void verifySingleCustomer(){
         reporter.test = reporter.extents.startTest("API-TEST001", "Verify the details of a single customer");
-        // i am a comment to test jenkins integration
         try {
             given().
                     when().get(Endpoints.CUSTOMER("12212")).
@@ -44,7 +43,6 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
     @Test
     public void verifySingleAccount() {
         reporter.test = reporter.extents.startTest("API-TEST002", "Verify the details of a single account");
-        //anothe comment to test jenkins integration
         try {
             given().
                     when().get(Endpoints.ACCOUNT("13344")).

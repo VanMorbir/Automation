@@ -21,7 +21,6 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
     @Test
     public void verifySingleCustomer(){
         reporter.test = reporter.extents.startTest("API-TEST001", "Verify the details of a single customer");
-        /// this is a comment
         try {
             given().
                     when().get(Endpoints.CUSTOMER("12212")).
@@ -43,7 +42,6 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
 
     @Test
     public void verifySingleAccount() {
-        //this is another comment
         reporter.test = reporter.extents.startTest("API-TEST002", "Verify the details of a single account");
         try {
             given().
@@ -64,6 +62,5 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
             reporter.extents.endTest(reporter.test);
             throw e;
         }
-        //and onther one
     }
 }

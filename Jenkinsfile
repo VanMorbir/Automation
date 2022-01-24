@@ -9,11 +9,13 @@ pipeline {
         stage('Test') {
             steps {
                 //bat 'cd ParaBankTesting'
-                try {
-                    bat './mvnw test -f ParaBankTesting'
-                }
-                catch (Exception e) {
-                    echo "Faild tests, publishing report anyway"
+                script {
+                    try {
+                        bat './mvnw test -f ParaBankTesting'
+                    }
+                    catch (Exception e) {
+                        echo "Faild tests, publishing report anyway"
+                    }
                 }
             }
         }

@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat './mvnw test -f ParaBankTesting -Dtest=AlltestSuite'
+                        bat './mvnw test -f ParaBankTesting -Dtest=AllTestsSuite'
                     }
                     catch (Exception e) {
                         echo "Faild tests, publishing report anyway"

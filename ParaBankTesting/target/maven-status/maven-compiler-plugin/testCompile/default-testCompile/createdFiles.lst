@@ -1,3 +1,4 @@
+AllTestsRunner.class
 config\uiconfig\ParaBankUIConfig$Alerts.class
 config\uiconfig\ParaBankUIConfig$Credentials$InvalidLogin.class
 config\uiconfig\ParaBankUIConfig.class
@@ -15,3 +16,4 @@ config\uiconfig\NavigateTo.class
 config\apiconfig\ParaBankAPIConfig.class
 config\uiconfig\ParaBankActions.class
 config\uiconfig\ParaBankUIConfig$Credentials$ValidLogin.class
+AllTestsSuite.class

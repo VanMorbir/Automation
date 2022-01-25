@@ -83,9 +83,5 @@ public class ParaBankUITests {
         driver.quit();
     }
 
-    @AfterClass
-    public static void finish(){
-        System.out.println("FINISH!!!");
-        reporter.extents.flush();
-    }
+
 }

@@ -53,7 +53,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2022-01-25 10:30:25</span>
+					<span class='suite-started-time'>2022-01-25 10:52:58</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +83,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 5s+956ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 16s+416ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 5s+956ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 16s+416ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2022-01-25 10:30:19</span> 
+							<span class='panel-lead suite-started-time'>2022-01-25 10:52:41</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2022-01-25 10:30:25</span> 
+							<span class='panel-lead suite-ended-time'>2022-01-25 10:52:58</span> 
 						</div> 
 					</div>
 				</div>
@@ -176,7 +176,7 @@
 										</tr>
 										<tr>
 											<td>Java Version</td>
-											<td>17.0.2</td>
+											<td>17</td>
 										</tr>
 										<tr>
 											<td>Host Name</td>
@@ -206,7 +206,6 @@
 									<li class='pass'><a href='#!'>Pass</a></li>
 									<li class='fail'><a href='#!'>Fail</a></li>
 									<li class='skip'><a href='#!'>Skip</a></li>
-										<li class='unknown'><a href='#!'>Unknown</a></li>
 									<li class='divider'></li>
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
@@ -238,17 +237,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active unknown ' extentid='4eb0469b-a124-49d5-80ae-694f05430202'>
+										<li class='collection-item test displayed active fail ' extentid='b1b15ba1-bdb9-44ad-add7-209aa0044e0d'>
 											<div class='test-head'>
 												<span class='test-name'>API-TEST002 </span>
-												<span class='test-status label right outline capitalize unknown'>unknown</span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:30:19</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:52:42</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:52:45</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+449ms</span>
 												</div>
 												<div class='test-desc'>Verify the details of a single account</div>
 												<div class='test-attributes'>
@@ -263,6 +262,14 @@
 															</tr>
 														</thead>
 														<tbody>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:52:45</td>
+																	<td class='step-details'>Response from server mismatch:1 expectation failed.
+XML path account.type doesn't match.
+Expected: CHECKING
+  Actual: SAVINGS</td>
+																</tr>
 														</tbody>
 													</table>
 													<ul class='collapsible node-list' data-collapsible='accordion'>
@@ -270,17 +277,17 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active fail ' extentid='a72ce734-0f8f-49c9-b319-fb30ba6db1ae'>
+										<li class='collection-item test displayed active pass ' extentid='82a3f517-5866-4b29-b941-6ceec6599f1b'>
 											<div class='test-head'>
 												<span class='test-name'>API-TEST001 </span>
-												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:30:19</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:30:22</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+366ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:52:45</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:52:46</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+141ms</span>
 												</div>
 												<div class='test-desc'>Verify the details of a single customer</div>
 												<div class='test-attributes'>
@@ -297,17 +304,9 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:30:22</td>
+																	<td class='timestamp'>10:52:46</td>
 																	<td class='step-details'>Response from server matched credentials</td>
 																</tr>
-																<tr>
-																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>10:30:22</td>
-																	<td class='step-details'>Response from server mismatch:1 expectation failed.
-XML path account.type doesn't match.
-Expected: CHECKING
-  Actual: SAVINGS</td>
-																</tr>
 														</tbody>
 													</table>
 													<ul class='collapsible node-list' data-collapsible='accordion'>
@@ -315,39 +314,7 @@ Expected: CHECKING
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active unknown ' extentid='0660ab0b-46e0-4855-8481-b0a993804cb8'>
-											<div class='test-head'>
-												<span class='test-name'>UI-TEST002 </span>
-												<span class='test-status label right outline capitalize unknown'>unknown</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:30:23</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-												</div>
-												<div class='test-desc'>Testing 'Contact Us' request with missing phone number</div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='c3e6fc1c-c436-46de-a056-d9acaf6ae79e'>
+										<li class='collection-item test displayed active pass ' extentid='7a7e4666-615d-4d8c-9770-f6fdcb4e419e'>
 											<div class='test-head'>
 												<span class='test-name'>UI-TEST001 </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -355,9 +322,9 @@ Expected: CHECKING
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:30:23</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:30:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+183ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:52:50</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:52:52</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+828ms</span>
 												</div>
 												<div class='test-desc'>Testing Valid 'Contact Us' request</div>
 												<div class='test-attributes'>
@@ -374,18 +341,50 @@ Expected: CHECKING
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:30:24</td>
+																	<td class='timestamp'>10:52:52</td>
+																	<td class='step-details'>Contact filled succesfully</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='605f0dbd-675d-495e-86f1-b98142aa7f08'>
+											<div class='test-head'>
+												<span class='test-name'>UI-TEST002 </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-01-25 10:52:57</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-01-25 10:52:58</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+976ms</span>
+												</div>
+												<div class='test-desc'>Testing 'Contact Us' request with missing phone number</div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:52:58</td>
 																	<td class='step-details'>Missing phone number alert is visible</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:30:24</td>
+																	<td class='timestamp'>10:52:58</td>
 																	<td class='step-details'>Missing phone number alert text is correct</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:30:24</td>
-																	<td class='step-details'>Contact filled succesfully</td>
 																</tr>
 														</tbody>
 													</table>

@@ -13,11 +13,14 @@ public class AllTestsSuite {
 
     @BeforeClass
     public static void InitReporter(){
+        System.out.println("RUNNING TEST SUITE");
         reporter = Reporter.getInstance();
+
     }
 
     @AfterClass
     public static void finish(){
+        System.out.println("FINISHING TEST SUITE");
         reporter.extents.flush();
     }
 }

@@ -4,7 +4,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 public class Reporter {
-    private static Reporter instance;
+    private static Reporter instance = null;
     public ExtentReports extents;
     public ExtentTest test;
 

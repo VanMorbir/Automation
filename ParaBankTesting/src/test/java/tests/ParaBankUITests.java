@@ -57,6 +57,7 @@ public class ParaBankUITests {
                 driver
         );
         WebElement alert = driver.findElement(By.cssSelector("#phone\\.errors"));
+
         try {
 
             Assert.assertTrue(alert.isDisplayed());
@@ -64,17 +65,19 @@ public class ParaBankUITests {
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Missing phone number alert is not visible");
-            //throw e;
+            throw e;
         }
         finally {
             reporter.extents.endTest(reporter.test);
         }
+
         try {
             Assert.assertEquals(ParaBankUIConfig.Alerts.Contact.MissingPhoneNumber, alert.getText());
             reporter.test.log(LogStatus.PASS, "Missing phone number alert text is correct");
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Missing phone number alert text mismatch");
+            throw e;
         }
         finally {
             reporter.extents.endTest(reporter.test);

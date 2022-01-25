@@ -1,11 +1,13 @@
-C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\apiconfig\ParaBankAPIConfig.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\Reporter.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\apiconfig\Endpoints.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\AllTestsSuite.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\AllTestsRunner.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\uielements\RightSideNavBar.java
-C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\ParaBankUIConfig.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\uielements\ContactPage.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\ParaBankActions.java
-C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\uielements\LoginBar.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\ParaBankUITests.java
-C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\ParaBankAPITests.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\NavigateTo.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\apiconfig\ParaBankAPIConfig.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\ParaBankUIConfig.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\uielements\LoginBar.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\ParaBankAPITests.java

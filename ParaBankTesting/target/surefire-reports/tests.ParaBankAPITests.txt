@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: tests.ParaBankAPITests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.55 s - in tests.ParaBankAPITests
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.606 s <<< FAILURE! - in tests.ParaBankAPITests
+tests.ParaBankAPITests.verifySingleAccount  Time elapsed: 3.606 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+XML path account.type doesn't match.
+Expected: CHECKING
+  Actual: SAVINGS
+
+	at tests.ParaBankAPITests.verifySingleAccount(ParaBankAPITests.java:54)
+

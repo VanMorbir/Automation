@@ -31,12 +31,13 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
                     and().
                     assertThat().body("customer.lastName", equalTo("Smith"));
             reporter.test.log(LogStatus.PASS, "Response from server matched credentials");
-            reporter.extents.endTest(reporter.test);
         }
         catch (AssertionError e){
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch: \n" + e.getMessage());
-            reporter.extents.endTest(reporter.test);
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
             throw e;
+        }
+        finally {
+            reporter.extents.endTest(reporter.test);
         }
     }
 
@@ -53,14 +54,15 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
                     and().
                     assertThat().body("account.type", equalTo("CHECKING"));
             reporter.test.log(LogStatus.PASS, "Response from server matched credentials");
-            reporter.extents.endTest(reporter.test);
 
         }
         catch (AssertionError e)
         {
-            reporter.test.log(LogStatus.FAIL, "Response from server mismatch: \n" + e.getMessage());
-            reporter.extents.endTest(reporter.test);
+            reporter.test.log(LogStatus.FAIL, "Response from server mismatch:" + e.getMessage());
             throw e;
+        }
+        finally {
+            reporter.extents.endTest(reporter.test);
         }
     }
 }

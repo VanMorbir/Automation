@@ -31,16 +31,17 @@ public class ParaBankUITests {
                 ParaBankUIConfig.Credentials.ContactInfo.Message,
                 driver
         );
-        Boolean isContactSucceded = driver.findElement(By.cssSelector("#rightPanel > h1")).isDisplayed();
+        boolean isContactSucceeded = driver.findElement(By.cssSelector("#rightPanel > h1")).isDisplayed();
         try {
-            Assert.assertTrue(isContactSucceded);
-            reporter.test.log(LogStatus.PASS, "Contact filled succesfully");
-            reporter.extents.endTest(reporter.test);
+            Assert.assertTrue(isContactSucceeded);
+            reporter.test.log(LogStatus.PASS, "Contact filled successfully");
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Failed to submit contact information");
+            //throw e;
+        }
+        finally {
             reporter.extents.endTest(reporter.test);
-            throw e;
         }
     }
 
@@ -56,24 +57,29 @@ public class ParaBankUITests {
                 driver
         );
         WebElement alert = driver.findElement(By.cssSelector("#phone\\.errors"));
+
         try {
 
             Assert.assertTrue(alert.isDisplayed());
             reporter.test.log(LogStatus.PASS, "Missing phone number alert is visible");
-            reporter.extents.endTest(reporter.test);
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Missing phone number alert is not visible");
-            reporter.extents.endTest(reporter.test);
             throw e;
         }
+        finally {
+            reporter.extents.endTest(reporter.test);
+        }
+
         try {
             Assert.assertEquals(ParaBankUIConfig.Alerts.Contact.MissingPhoneNumber, alert.getText());
             reporter.test.log(LogStatus.PASS, "Missing phone number alert text is correct");
-            reporter.extents.endTest(reporter.test);
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Missing phone number alert text mismatch");
+            throw e;
+        }
+        finally {
             reporter.extents.endTest(reporter.test);
         }
     }
@@ -83,9 +89,5 @@ public class ParaBankUITests {
         driver.quit();
     }
 
-    @AfterClass
-    public static void finish(){
-        System.out.println("FINISH!!!");
-        reporter.extents.flush();
-    }
+
 }

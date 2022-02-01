@@ -2,6 +2,8 @@ package config.uiconfig;
 
 public class ParaBankUIConfig {
     public static String baseURL = "https://parabank.parasoft.com/parabank/index.htm";
+    public static String appiumServer = "http://127.0.0.1:4723/wd/hub";
+    public static String deviceName = "device";
 
     public static class Credentials {
         public static class ValidLogin {

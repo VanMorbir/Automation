@@ -10,16 +10,16 @@ public class ContactPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(name = "name")
+    @FindBy(css = "#name")
     public WebElement NameTextBox;
 
-    @FindBy(name = "email")
+    @FindBy(css = "#email")
     public WebElement EmailTextBox;
 
-    @FindBy(name = "phone")
+    @FindBy(css = "#phone")
     public WebElement PhoneTextBox;
 
-    @FindBy(name = "message")
+    @FindBy(css = "#message")
     public WebElement MessageTextBox;
 
     @FindBy(css = "#contactForm > table > tbody > tr:nth-child(5) > td:nth-child(2) > input")

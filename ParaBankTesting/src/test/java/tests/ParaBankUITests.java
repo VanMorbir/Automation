@@ -5,23 +5,28 @@ import config.Reporter;
 import config.uiconfig.NavigateTo;
 import config.uiconfig.ParaBankActions;
 import config.uiconfig.ParaBankUIConfig;
+import io.appium.java_client.android.AndroidDriver;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.net.MalformedURLException;
+
 public class ParaBankUITests {
     public WebDriver driver;
+    //public AndroidDriver<WebElement> driver;
     public static Reporter reporter;
 
     @Before
-    public void setup() {
+    public void setup() throws MalformedURLException {
+        //driver = ParaBankActions.InitMobileDriver();
         driver = ParaBankActions.InitDriver();
         reporter = Reporter.getInstance();
     }
 
     @Test
-    public void testValidContact(){
+    public void testValidContact() throws InterruptedException {
         reporter.test = reporter.extents.startTest("UI-TEST001","Testing Valid 'Contact Us' request");
         NavigateTo.ContactThroughRightNavBar(driver);
         ParaBankActions.FillContactForm(
@@ -31,6 +36,7 @@ public class ParaBankUITests {
                 ParaBankUIConfig.Credentials.ContactInfo.Message,
                 driver
         );
+        Thread.sleep(5000);
         boolean isContactSucceeded = driver.findElement(By.cssSelector("#rightPanel > h1")).isDisplayed();
         try {
             Assert.assertTrue(isContactSucceeded);
@@ -38,7 +44,7 @@ public class ParaBankUITests {
         }
         catch (AssertionError e){
             reporter.test.log(LogStatus.FAIL, "Failed to submit contact information");
-            //throw e;
+            throw e;
         }
         finally {
             reporter.extents.endTest(reporter.test);
@@ -46,7 +52,7 @@ public class ParaBankUITests {
     }
 
     @Test
-    public void testMissingPhoneNumberInContact(){
+    public void testMissingPhoneNumberInContact() throws InterruptedException {
         reporter.test = reporter.extents.startTest("UI-TEST002","Testing 'Contact Us' request with missing phone number");
         NavigateTo.ContactThroughRightNavBar(driver);
         ParaBankActions.FillContactForm(

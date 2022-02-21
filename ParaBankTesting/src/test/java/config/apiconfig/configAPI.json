@@ -1,0 +1,6 @@
+{
+    "endpoints": {
+      "customers": "customers/",
+      "accounts": "accounts/"
+    }
+}

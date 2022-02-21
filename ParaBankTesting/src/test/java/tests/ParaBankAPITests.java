@@ -52,7 +52,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
                     and().
                     assertThat().body("account.customerId", equalTo("12212")).
                     and().
-                    assertThat().body("account.type", equalTo("CHECKING"));
+                    assertThat().body("account.type", equalTo("SAVINGS"));
             reporter.test.log(LogStatus.PASS, "Response from server matched credentials");
 
         }

@@ -1,4 +1,8 @@
 {
+    "url": {
+      "baseUri": "http://parabank.parasoft.com",
+      "basePath": "/parabank/services/bank/"
+    },
     "endpoints": {
       "customers": "customers/",
       "accounts": "accounts/"

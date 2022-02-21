@@ -24,7 +24,7 @@ public class ParaBankActions {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ParaBankUIConfig.deviceName);
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-        capabilities.setCapability("chromedriverExecutable", "C:\\Users\\Gil\\Documents\\GitHub\\Automation\\src\\main\\resources\\chromedriver.exe");
+        capabilities.setCapability("chromedriverExecutable", "src/main/resources/chromedriver.exe");
 
         AndroidDriver<WebElement> driver = new AndroidDriver<>(new URL(ParaBankUIConfig.appiumServer), capabilities);
         driver.navigate().to(ParaBankUIConfig.baseURL);

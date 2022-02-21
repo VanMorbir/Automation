@@ -1,0 +1,24 @@
+{
+  "urls": {
+    "baseURL": "https://parabank.parasoft.com/parabank/index.htm",
+    "appiumServer": "http://127.0.0.1:4723/wd/hub",
+    "deviceName": "device"
+  },
+
+  "credentials": {
+    "username": "john",
+    "password": "demo",
+    "wrongpassword": "123"
+  },
+
+  "contactInfo": {
+    "Name": "Test McTestface",
+    "Email": "test@test.com",
+    "PhoneNumber": "+123 456789",
+    "Message": "I am a message, hear me roar"
+  },
+
+  "alerts": {
+    "missingPhoneNumber": "Phone is required."
+  }
+}

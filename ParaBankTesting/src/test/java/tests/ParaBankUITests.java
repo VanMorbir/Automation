@@ -36,7 +36,6 @@ public class ParaBankUITests {
                 ParaBankUIConfig.Credentials.ContactInfo.Message,
                 driver
         );
-        Thread.sleep(5000);
         boolean isContactSucceeded = driver.findElement(By.cssSelector("#rightPanel > h1")).isDisplayed();
         try {
             Assert.assertTrue(isContactSucceeded);

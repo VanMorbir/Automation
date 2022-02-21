@@ -43,7 +43,7 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
         String lastName = (String) customer.get("lastName");
         try {
             given().
-                    when().get(Endpoints.CUSTOMER("12212")).
+                    when().get(Endpoints.CUSTOMER(id)).
                     then().
                     assertThat().body("customer.id", equalTo(id)).
                     and().
@@ -64,15 +64,19 @@ public class ParaBankAPITests extends ParaBankAPIConfig {
     @Test
     public void verifySingleAccount() {
         reporter.test = reporter.extents.startTest("API-TEST002", "Verify the details of a single account");
+        JSONObject account = (JSONObject) credentialsObject.get("account");
+        String id = (String) account.get("id");
+        String customerId = (String) account.get("customerId");
+        String type = (String) account.get("type");
         try {
             given().
-                    when().get(Endpoints.ACCOUNT("13344")).
+                    when().get(Endpoints.ACCOUNT(id)).
                     then().
-                    assertThat().body("account.id", equalTo("13344")).
+                    assertThat().body("account.id", equalTo(id)).
                     and().
-                    assertThat().body("account.customerId", equalTo("12212")).
+                    assertThat().body("account.customerId", equalTo(customerId)).
                     and().
-                    assertThat().body("account.type", equalTo("SAVINGS"));
+                    assertThat().body("account.type", equalTo(type));
             reporter.test.log(LogStatus.PASS, "Response from server matched credentials");
 
         }

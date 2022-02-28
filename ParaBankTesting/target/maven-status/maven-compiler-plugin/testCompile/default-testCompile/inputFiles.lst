@@ -1,3 +1,4 @@
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\UITestsCollection.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\Reporter.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\apiconfig\Endpoints.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\AllTestsSuite.java
@@ -10,4 +11,5 @@ C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\ui
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\apiconfig\ParaBankAPIConfig.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\ParaBankUIConfig.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\config\uiconfig\uielements\LoginBar.java
+C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\ParaBankMobileTests.java
 C:\Users\Gil\Documents\GitHub\Automation\ParaBankTesting\src\test\java\tests\ParaBankAPITests.java
